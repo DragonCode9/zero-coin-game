@@ -6,7 +6,7 @@ public class Player {
         private double x;
         private double y;
         private final double size = 24;
-        private final double speed = 180;
+        private final double speed = 300;
 
         public Player(double startX, double startY) {
             x = startX;
@@ -22,7 +22,7 @@ public class Player {
         }
 
         public void draw(GameApp app) {
-            app.fill(Color.rgb(100, 149, 237));
+            app.fill(Color.rgb(238, 138, 24));
             app.rect(x, y, size, size);
         }
     }
