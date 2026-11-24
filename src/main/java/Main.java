@@ -28,9 +28,7 @@ public class Main extends GameApp {
     public void restart() {
         player = new Player(40, 180);
         coins = new Coin[] {
-            new Coin((int)(Math.random() * 511) + 100, (int)(Math.random() * 341) + 30),
-            new Coin((int)(Math.random() * 511) + 100, (int)(Math.random() * 341) + 30),
-            new Coin((int)(Math.random() * 511) + 100, (int)(Math.random() * 341) + 30)
+            new Coin(220, 180), new Coin(420, 80), new Coin(540, 300)
         };
         won = false;
         message.setText("Collect all " + coins.length + " coins.");
