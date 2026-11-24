@@ -30,9 +30,9 @@ public class Main extends GameApp {
     public void restart() {
         player = new Player(40, 180);
         coins = new Coin[] {
-            new Coin(rand.nextInt(100, 611), rand.nextInt(30, 371)),
-            new Coin(rand.nextInt(100, 611), rand.nextInt(30, 371)),
-            new Coin(rand.nextInt(100, 611), rand.nextInt(30, 371))
+            new Coin(rand.nextInt(511) + 100, rand.nextInt(341) + 30),
+            new Coin(rand.nextInt(511) + 100, rand.nextInt(341) + 30),
+            new Coin(rand.nextInt(511) + 100, rand.nextInt(341) + 30)
         };
         won = false;
         message.setText("Collect all " + coins.length + " coins.");
