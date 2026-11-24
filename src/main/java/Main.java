@@ -4,10 +4,8 @@ import zero.GameApp;
 import zero.ui.Button;
 import zero.ui.Label;
 import zero.ui.Row;
-import java.util.Random;
 
 public class Main extends GameApp {
-    private Random rand = new Random();
     private Player player;
     private Coin[] coins;
     private boolean won;
@@ -30,9 +28,9 @@ public class Main extends GameApp {
     public void restart() {
         player = new Player(40, 180);
         coins = new Coin[] {
-            new Coin(rand.nextInt(511) + 100, rand.nextInt(341) + 30),
-            new Coin(rand.nextInt(511) + 100, rand.nextInt(341) + 30),
-            new Coin(rand.nextInt(511) + 100, rand.nextInt(341) + 30)
+            new Coin((int)(Math.random() * 511) + 100, (int)(Math.random() * 341) + 30),
+            new Coin((int)(Math.random() * 511) + 100, (int)(Math.random() * 341) + 30),
+            new Coin((int)(Math.random() * 511) + 100, (int)(Math.random() * 341) + 30)
         };
         won = false;
         message.setText("Collect all " + coins.length + " coins.");
